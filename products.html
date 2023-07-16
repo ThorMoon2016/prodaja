@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - RedStore</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/992b1432c1.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/vitality.png" width="125px"></a>
+            </div>
+            <nav>
+              <ul id="MenuItems">
+                  <li><a href="index.html">Pocetna</a></li>
+                  <li><a href="">Proizvodi</a></li>
+                  <li><a href="">O nama</a></li>
+                  <li><a href="">Kontakt</a></li>
+                </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+           </div>
+           </div>
+  
+<div class="small-container">
+
+    <div class="row row-2">
+        <h2>Svi proizvodi</h2>
+        <select>
+            <option>Sortiraj</option>
+            <option>Najjeftiniji </option>
+            <option>Najskuplji</option>
+            <option>Najstariji</option>
+            <option>Najnoviji</option>
+        </select>
+    </div>
+        
+    <div class="row">
+        <div class="col-4">
+            <a href="product-details.html"><img src="images/c1.png"></a>
+            <a href="product-details.html"><h4>Caj protiv arterioskleroze</h4></a>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <a href="product-details-c2.html"><img src="images/c2.png"></a>
+            <a href="product-details-c2.html"><h4>Caj protiv povisenog holesterola</h4></a>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$35.00</p>
+        </div>
+        <div class="col-4">
+            <a href="product-details-c3.html"><img src="images/c3.png"></a>
+            <a href="product-details-c3.html"></a><h4>Caj protiv visokog pritiska</h4></a>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>$40.00</p>
+        </div>
+        <div class="col-4">
+            <a href="product-details-c4.html"><img src="images/c4.png"></a>
+            <a href="product-details-c4.html"></a><h4>Detox caj</h4></a>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$75.00</p>
+        </div>
+   
+
+    
+
+
+    <!-------- footer ------->
+
+
+
+<!---------js for toggle menu------->
+   <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+   </script>
+
+</body>    
+</html>

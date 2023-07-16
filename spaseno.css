@@ -1,0 +1,93 @@
+h4{
+    color: #e21313;
+    font-weight: normal;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h5{
+    color: #555;
+    font-weight: normal;
+    text-decoration: line-through;
+}   
+
+.single-product h5{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.timer-box {
+    background-color: #f2f2f2;
+    padding: 2px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .timer {
+    font-size: 20px;
+    color: #ff0000;
+  }
+  
+
+  #customer-details-container {
+    border: 1px solid white;
+    padding: 20px;
+  }
+
+  .col-50{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-50 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .col-50, .col-3, .col-4{
+    flex-basis: 100%;
+}
+
+
+<div class="headbar">
+  <div class="discount-text">Akcija od 50% važi još:</div>
+  <div class="timer">05:00</div>
+  <div class="start-order">
+    <a href="#customer-details-container" id="startButton" class="order-button">Započni narudžbu</a>
+  </div>
+</div>
+
+  <div id="customer-details-container">
+    <div class="input-container">
+      <div class="input-box">
+        <input type="text" placeholder="Unesite ime i prezime" onkeypress="return /^[A-Za-z]+$/.test(event.key)">
+      </div>
+    </div>
+    
+    <div class="input-container">
+      <div class="input-box">
+        <input type="tel" placeholder="Unesite Vaš broj" onkeypress="return /^[0-9]+$/.test(event.key)">
+      </div>
+    </div>
+  
+    <div class="input-container">
+      <div class="input-box">
+        <input type="tel" placeholder="Unesite Vašu adresu" onkeypress="return /^[0-9]+$/.test(event.key)">
+      </div>
+    </div>
+    
+    <div class="input-container">
+      <div class="buy-box">
+        <p>KUPI</p>
+      </div>
+    </div>
+  </div>
